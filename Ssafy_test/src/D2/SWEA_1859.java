@@ -31,7 +31,7 @@ public class SWEA_1859 {
 			
 			int start = 0;
 			int end = 0;
-			int ans = 0;
+			long ans = 0;
 			
 			for(int i = 0; i< n; i++) {
 				if(money.get(i) == max) {
@@ -55,7 +55,6 @@ public class SWEA_1859 {
 		bw.flush();
 		br.close();
 		bw.close();
-
 	}
 
 }

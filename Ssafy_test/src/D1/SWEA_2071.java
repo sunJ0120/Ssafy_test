@@ -12,7 +12,7 @@ public class SWEA_2071 {
 		StringTokenizer st ;
 		for(int i = 1; i<=3; i++) {
 			st = new StringTokenizer(br.readLine());
-			float sum = 0;
+			float sum = 0; //sum을 float으로 정의해야 한다는 것에 주의하자.
 			int ans;
 			
 			for(int j = 0; j<10; j++) {

@@ -14,7 +14,6 @@ import java.io.*;
  * 4,2,2 단위로 잘라서 숫자로 바꿔서 사용한다.
  */
 
-
 public class SWEA_2056 {
 	public static void main(String[] args) throws IOException{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -28,10 +27,6 @@ public class SWEA_2056 {
 			int year = n /10000;
 			int month = (n % 10000) / 100;
 			int day = (n % 10000) % 100; 
-			
-//			System.out.println("year = "+ year);
-//			System.out.println("month = "+ month);
-//			System.out.println("day = "+ day);
 			
 			boolean t = false;
 			
@@ -66,5 +61,4 @@ public class SWEA_2056 {
 		bw.close();
 		br.close();
 	}
-
 }

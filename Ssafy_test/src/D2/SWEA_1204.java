@@ -22,9 +22,6 @@ public class SWEA_1204 {
 				int a = Integer.parseInt(st.nextToken());
 				lis[a]++; //하나 증가
 			}
-			
-//			Arrays.asList(lis); //이건 보이기에만 이렇게 바꾼거라, get, max 등을 몼써..
-			
 			for(int l:lis) {
 				li.add(l); //직접 값을 복사
 			}
