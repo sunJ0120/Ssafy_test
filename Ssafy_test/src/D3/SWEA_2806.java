@@ -36,8 +36,8 @@ public class SWEA_2806 {
 		}
 		
 		for(int i = 0; i<N;i++) { //queen[i] = depth로 하면 행의 값 i열 depth행 이런식
-			queen[i] = depth;
-			if(isPossible(depth)) {
+			queen[depth] = i;
+			if(isPossible(depth)) { //depth가 행
 				dfs(depth+1);
 			}
 		}
