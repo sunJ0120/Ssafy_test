@@ -55,10 +55,8 @@ class Graph{
 				dfs(n1.data, node+1);
 			}
 		}
-		
 		n.visit = false;
 	}
-	
 }
 
 public class SWEA_2814 {
