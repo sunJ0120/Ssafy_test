@@ -4,7 +4,6 @@ import java.util.*;
 import java.io.*;
 
 public class SWEA_1860 {
-
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
@@ -63,5 +62,4 @@ public class SWEA_1860 {
 		bw.close();
 		br.close();
 	}
-
 }
