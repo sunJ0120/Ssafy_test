@@ -26,7 +26,7 @@ public class BOJ_11727 {
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 		
 		int num = Integer.parseInt(br.readLine());
-		dp = new int[num+1];
+		dp = new int[num+2];
 		
 		dp[1] = 1;
 		dp[2] = 3;
