@@ -23,27 +23,11 @@ public class BOJ_2156 {
 		if(num>=2) {
 			dp[num-2] = ll[num-2] + ll[num-1]; //초기화
 			for(int i = num-3; i>=0; i--) {
-				//dp[i+3] 부터 max
-				int a = 0;
-				for(int j = i+3; j< num; j++) {
-					a = Math.max(a, dp[j]);
-				}
-				
-				//dp[i+2] 부터 max
-				int b = 0;
-				for(int j = i+2; j< num; j++) {
-					b = Math.max(b, dp[j]);
-				}
-				
-				dp[i] = ll[i] + Math.max(ll[i+1] + a, b);
+				dp[i] = Math.max(ll[i]+ ll[i+1] + dp[i+3], Math.max(dp[i+1],ll[i] + dp[i+2]));
 			}
 		}
 		
-		for(int i = 0; i<num; i++) {
-			ans = Math.max(ans, dp[i]);
-		}
-		
-		bw.write(ans + "\n");
+		bw.write(dp[0] + "\n");
 		bw.flush();
 		br.close();
 		bw.close();
